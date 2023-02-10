@@ -8,19 +8,17 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Toolbox</title>
+        <title>Cuestionario Prueba</title>
         <link rel="icon" href="/ticoman.ico" />
       </Head>
 
       <main>
-        <Header title="Next.js Toolbox" />
+        <Header title="Cuestionario IPN ESIME Ticoman" />
         <hr />
         <p className="description">
-          Here's an example of a Netlify Form! When you fill this out, the
-          submissions can be found in the Netlify Admin site.
+          Favor de llenar el custionario con sus respectivas respuestas:
         </p>
         <FeedbackForm />
-        <JokeBlock />
       </main>
       <Footer />
     </div>
