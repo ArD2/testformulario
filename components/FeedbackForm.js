@@ -19,6 +19,29 @@ export default function FeedbackForm() {
   
         <label htmlFor="name">Nombre</label>
         <input id="name" className={styles['form-field']} type="text" name="name" />
+        
+        <div className="radio">
+          <label>
+            <input
+              type="radio"
+              value="Male"
+              checked={this.state.selectedOption === "Male"}
+              onChange={this.onValueChange}
+            />
+            Male
+          </label>
+        </div>
+        <div className="radio">
+          <label>
+            <input
+              type="radio"
+              value="Female"
+              checked={this.state.selectedOption === "Female"}
+              onChange={this.onValueChange}
+            />
+            Female
+          </label>
+        </div> 
 
         <label htmlFor="email">Correo</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
