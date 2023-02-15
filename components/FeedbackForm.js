@@ -25,8 +25,6 @@ export default function FeedbackForm() {
             <input
               type="radio"
               value="Male"
-              checked={this.state.selectedOption === "Male"}
-              onChange={this.onValueChange}
             />
             Male
           </label>
@@ -36,8 +34,6 @@ export default function FeedbackForm() {
             <input
               type="radio"
               value="Female"
-              checked={this.state.selectedOption === "Female"}
-              onChange={this.onValueChange}
             />
             Female
           </label>
