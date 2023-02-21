@@ -21,7 +21,7 @@ export default function FeedbackForm() {
         <label htmlFor="name">Nombre</label>
         <input id="name" className={styles['form-field']} type="text" name="name" />
         
-        <img src="/napoleon.jpg" />
+        <img src="/napoleon.jpg" className={styles['form-image']}/>
         <fieldset>
           <legend>¿De que color es el caballo blanco de Napoleón?</legend>
           <div>
