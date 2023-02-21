@@ -23,10 +23,11 @@ export default function FeedbackForm() {
 
         <label htmlFor="email">Correo</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
+        <br></br>
         
         <img src="/napoleon.jpg" className={styles['form-image']}/>
         <fieldset>
-          <legend>¿El caballo de Napoleón es blanco?</legend>
+          <legend>1.- ¿El caballo de Napoleón es blanco?</legend>
           <div>
             <input type="radio" id="verdadero" name="pregunta1" value="verdadero"/>
             <label for="verdadero">Verdadero</label>
@@ -38,7 +39,7 @@ export default function FeedbackForm() {
 
         <img src="/brushless.jpg" className={styles['form-image']}/>
         <fieldset>
-          <legend>¿Un motor brushless funciona con PWM?</legend>
+          <legend>2.- ¿Un motor brushless funciona con PWM?</legend>
           <div>
             <input type="radio" id="verdadero" name="pregunta2" value="verdadero"/>
             <label for="verdadero">Verdadero</label>
@@ -48,6 +49,43 @@ export default function FeedbackForm() {
           </div>
         </fieldset>
 
+        <img src="/national.jpg" className={styles['form-image']}/>
+        <fieldset>
+          <legend>3.- ¿Este es un ejemplo de un sistema de primer orden?</legend>
+          <div>
+            <input type="radio" id="verdadero" name="pregunta3" value="verdadero"/>
+            <label for="verdadero">Verdadero</label>
+
+            <input type="radio" id="falso" name="pregunta3" value="falso" />
+            <label for="falso">Falso</label>
+          </div>
+        </fieldset>
+
+        <img src="/13Question.png" className={styles['form-image']}/>
+        <fieldset>
+          <legend>4.- ¿En este sistema existe la retroalimentación?</legend>
+          <div>
+            <input type="radio" id="verdadero" name="pregunta4" value="verdadero"/>
+            <label for="verdadero">Verdadero</label>
+
+            <input type="radio" id="falso" name="pregunta4" value="falso" />
+            <label for="falso">Falso</label>
+          </div>
+        </fieldset>
+
+        <img src="/encoder.jpg" className={styles['form-image']}/>
+        <fieldset>
+          <legend>5.- ¿El encoder es un transductor?</legend>
+          <div>
+            <input type="radio" id="verdadero" name="pregunta5" value="verdadero"/>
+            <label for="verdadero">Verdadero</label>
+
+            <input type="radio" id="falso" name="pregunta5" value="falso" />
+            <label for="falso">Falso</label>
+          </div>
+        </fieldset>
+
+        <br></br>
         <label htmlFor="feedback">Despues de leer <a href="https://www.redalyc.org/pdf/478/47802507.pdf" target="_blank">este</a> paper, ¿qué opinas?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         <button className={styles.button} type="submit">Enviar</button>
