@@ -23,7 +23,7 @@ export default function FeedbackForm() {
 
         <label htmlFor="email">Correo</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
-        <br></br>
+        <br>\n</br>
         
         <img src="/napoleon.jpg" className={styles['form-image']}/>
         <fieldset>
@@ -49,7 +49,7 @@ export default function FeedbackForm() {
           </div>
         </fieldset>
 
-        <img src="/national.jpg" className={styles['form-image']}/>
+        <img src="/national.png" className={styles['form-image']}/>
         <fieldset>
           <legend>3.- ¿Este es un ejemplo de un sistema de primer orden?</legend>
           <div>
