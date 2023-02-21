@@ -1,7 +1,7 @@
 import styles from './FeedbackForm.module.css'
 
 export default function FeedbackForm() {
-  return (  
+  return (
 
       <form
         className={styles.form}
@@ -25,7 +25,8 @@ export default function FeedbackForm() {
         <input id="email" className={styles['form-field']} type="email" name="email" required />
         <p> </p>
         
-        <img src="/napoleon.jpg" className={styles['form-image']}/>
+        <img src="/napoleon.jpg" onclick="enlargeImg()" id="img1" className={styles['form-image']}/>
+        <button onclick="resetImg()">Reset</button>
         <fieldset>
           <legend>1.- ¿El caballo de Napoleón es blanco?</legend>
           <div>

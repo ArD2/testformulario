@@ -4,14 +4,22 @@ import Footer from "@components/Footer";
 import FeedbackForm from "@components/FeedbackForm";
 import JokeBlock from "@components/JokeBlock";
 
-//var selectedValue = document.querySelector('input[name="contact"]:checked')
-
-//if(selectedValue != null) {   
-//  alert("Selected radio button values is: " + SelectedValue.value);  
-//}
+function enlargeImg() {
+  // Set image size to 1.5 times original
+  img.style.transform = "scale(1.5)";
+  // Animation effect
+  img.style.transition = "transform 0.25s ease";
+}
+// Function to reset image size
+function resetImg() {
+  // Set image size to original
+  img.style.transform = "scale(1)";
+  img.style.transition = "transform 0.25s ease";
+}
 
 export default function Home() {
   return (
+
     <div className="container">
       <Head>
         <title>Cuestionario Prueba</title>
