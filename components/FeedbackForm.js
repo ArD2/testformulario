@@ -23,7 +23,7 @@ export default function FeedbackForm() {
 
         <label htmlFor="email">Correo</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
-        {'\n'}
+        <p> </p>
         
         <img src="/napoleon.jpg" className={styles['form-image']}/>
         <fieldset>
