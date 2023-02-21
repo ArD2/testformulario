@@ -1,24 +1,5 @@
 import styles from './FeedbackForm.module.css'
 
-let windowObjectReference = null; // global variable
-function openRequestedTab(url, windowName) {
-  if (windowObjectReference === null || windowObjectReference.closed) {
-    windowObjectReference = window.open(url, windowName);
-  } else {
-    windowObjectReference.focus();
-  }
-}
-
-const link = document.querySelector("a[target='openpdf1']");
-link.addEventListener(
-  "click",
-  (event) => {
-    openRequestedTab(link.href);
-    event.preventDefault();
-  },
-  false
-);
-
 export default function FeedbackForm() {
   return (  
 
