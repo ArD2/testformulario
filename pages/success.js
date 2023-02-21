@@ -7,13 +7,13 @@ export default function Success() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Toolbox Template!</title>
+        <title>Recepción</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Submission Received!</h1>
-        <p>Thank you for your feedback! Head back to the <Link href="/"><a>home page</a></Link>.</p>
+        <h1>Respuestas recibidas!</h1>
+        <p>Gracias por tus respuestas, el profesor te hará saber tu calificación.</p>
       </main>
 
       <Footer />

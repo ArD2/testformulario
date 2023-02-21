@@ -25,8 +25,7 @@ export default function FeedbackForm() {
         <input id="email" className={styles['form-field']} type="email" name="email" required />
         <p> </p>
         
-        <img src="/napoleon.jpg" onclick="enlargeImg()" id="img1" className={styles['form-image']}/>
-        <button onclick="resetImg()">Reset</button>
+        <img src="/napoleon.jpg" className={styles['form-image']}/>
         <fieldset>
           <legend>1.- ¿El caballo de Napoleón es blanco?</legend>
           <div>
@@ -37,6 +36,7 @@ export default function FeedbackForm() {
             <label for="falso">Falso</label>
           </div>
         </fieldset>
+        <p> </p>
 
         <img src="/brushless.jpg" className={styles['form-image']}/>
         <fieldset>
@@ -49,6 +49,7 @@ export default function FeedbackForm() {
             <label for="falso">Falso</label>
           </div>
         </fieldset>
+        <p> </p>
 
         <img src="/national.png" className={styles['form-image']}/>
         <fieldset>
@@ -61,6 +62,7 @@ export default function FeedbackForm() {
             <label for="falso">Falso</label>
           </div>
         </fieldset>
+        <p> </p>
 
         <img src="/13Question.png" className={styles['form-image']}/>
         <fieldset>
@@ -73,6 +75,7 @@ export default function FeedbackForm() {
             <label for="falso">Falso</label>
           </div>
         </fieldset>
+        <p> </p>
 
         <img src="/encoder.jpg" className={styles['form-image']}/>
         <fieldset>
@@ -85,8 +88,8 @@ export default function FeedbackForm() {
             <label for="falso">Falso</label>
           </div>
         </fieldset>
+        <p> </p>
 
-        <br></br>
         <label htmlFor="feedback">Despues de leer <a href="https://www.redalyc.org/pdf/478/47802507.pdf" target="_blank">este</a> paper, ¿qué opinas?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         <button className={styles.button} type="submit">Enviar</button>
