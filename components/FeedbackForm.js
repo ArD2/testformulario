@@ -1,7 +1,8 @@
 import styles from './FeedbackForm.module.css'
 
 export default function FeedbackForm() {
-  return (
+  return (  
+
       <form
         className={styles.form}
         data-netlify="true"
@@ -20,29 +21,22 @@ export default function FeedbackForm() {
         <label htmlFor="name">Nombre</label>
         <input id="name" className={styles['form-field']} type="text" name="name" />
         
-        <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Male"
-            />
-            Male
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Female"
-            />
-            Female
-          </label>
-        </div> 
+        <img src="/napoleon.jpg" />
+        <fieldset>
+          <legend>¿De que color es el caballo blanco de Napoleón?</legend>
+          <div>
+            <input type="radio" id="verdadero" name="contact" value="verdadero"/>
+            <label for="verdadero">Verdadero</label>
+
+            <input type="radio" id="falso" name="contact" value="falso" />
+            <label for="falso">Falso</label>
+          </div>
+        </fieldset>
 
         <label htmlFor="email">Correo</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
 
-        <label htmlFor="feedback">Despues de leer {" "} paper, ¿qué opinas?<a href="https://www.redalyc.org/pdf/478/47802507.pdf">este</a></label>
+        <label htmlFor="feedback">Despues de leer <a href="https://www.redalyc.org/pdf/478/47802507.pdf">este</a> paper, ¿qué opinas?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         <button className={styles.button} type="submit">Enviar</button>
       </form>
