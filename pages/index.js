@@ -8,7 +8,7 @@ import styles from '@components/FeedbackForm.module.css'
 export default function Home() {
   return (
 
-    <div className={styles.background-colors}>
+    <div className="container">
       <Head>
         <title>Cuestionario Prueba</title>
         <link rel="icon" href="/ticoman.ico" />
