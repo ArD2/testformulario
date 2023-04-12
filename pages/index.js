@@ -8,13 +8,13 @@ import styles from '@components/FeedbackForm.module.css'
 export default function Home() {
   return (
 
-    <div className="container">
+    <div className={`${"container"} ${styles.background-colors}`}>
       <Head>
         <title>Cuestionario Prueba</title>
         <link rel="icon" href="/ticoman.ico" />
       </Head>
 
-      <main className={styles['background-colors']}>
+      <main>
         <Header title="Cuestionario IPN ESIME Ticomán" />
         <hr />
         <p className="description">
