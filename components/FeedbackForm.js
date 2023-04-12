@@ -1,4 +1,5 @@
 import styles from './FeedbackForm.module.css'
+import { checkButton } from './checkButton'
 
 export default function FeedbackForm() {
   return (
@@ -92,7 +93,8 @@ export default function FeedbackForm() {
 
         <label htmlFor="feedback">Despues de leer <a href="https://www.redalyc.org/pdf/478/47802507.pdf" target="_blank">este</a> paper, ¿qué opinas?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
-        <button className={styles.button} type="submit">Enviar</button>
+        <button className={styles.button} type="submit" onclick={checkButton}>Enviar</button>
       </form>
+      
   )
 }
