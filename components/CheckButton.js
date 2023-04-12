@@ -10,4 +10,5 @@ export function checkButton(){
     }else{
         alert("Selected radio button: " + getSelectedValue1.value);  
     }
+    return getSelectedValue1.value
   }
