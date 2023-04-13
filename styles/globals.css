@@ -17,8 +17,6 @@ main {
   justify-content: center;
   margin: 0 auto;
   max-width: 60ch;
-  border-left: 5px rgb(133, 0, 86);
-  border-right: 5px rgb(133, 0, 86);
 }
 
 hr {

@@ -39,5 +39,6 @@
 }
 
 .background-colors {
-  background-color: rgb(133, 0, 86);
+  border-left: 10px rgb(133, 0, 86);
+  border-right: 10px rgb(133, 0, 86);
 }
