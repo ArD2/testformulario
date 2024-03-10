@@ -92,7 +92,7 @@ export default function FeedbackForm() {
         </fieldset>
         <p> </p>
 
-        <img src="/encoder.jpg" className={styles['form-image']}/>
+        <img src="/localizacion.png" className={styles['form-image']}/>
         <fieldset>
           <legend>6.- ¿Este es un sistema 10-20?</legend>
           <div>
