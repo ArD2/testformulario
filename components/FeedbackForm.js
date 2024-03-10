@@ -92,6 +92,19 @@ export default function FeedbackForm() {
         </fieldset>
         <p> </p>
 
+        <img src="/encoder.jpg" className={styles['form-image']}/>
+        <fieldset>
+          <legend>6.- ¿Este es un sistema 10-20?</legend>
+          <div>
+            <input type="radio" id="verdadero" name="pregunta6" value="verdadero"/>
+            <label for="verdadero">Verdadero</label>
+
+            <input type="radio" id="falso" name="pregunta6" value="falso" />
+            <label for="falso">Falso</label>
+          </div>
+        </fieldset>
+        <p> </p>
+
         <label htmlFor="feedback">Despues de leer <a href="https://www.redalyc.org/pdf/478/47802507.pdf" target="_blank">este</a> paper, ¿qué opinas?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         <button className={styles.button} type="submit">Enviar</button>
